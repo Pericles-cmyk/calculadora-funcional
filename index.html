@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Pericles Dev</h1>
+    <div class="Calculator">
+        <input type="text" disabled id="display"/>
+        <div class="buttons">
+            <button onclick="clearDisplay()">AC</button>
+            <button onclick="removeLastCharacter()"><</button>
+            <button onclick="dividir()">/</button>
+            <button onclick="multiplicar()">*</button>
+            <button onclick="insertToDisplay('7')">7</button>
+            <button onclick="insertToDisplay('8')">8</button>
+            <button onclick="insertToDisplay('9')">9</button>
+            <button onclick="subtrair()">-</button>
+            <button onclick="insertToDisplay('4')">4</button>
+            <button onclick="insertToDisplay('5')">5</button>
+            <button onclick="insertToDisplay('6')">6</button>
+            <button onclick="somar()">+</button>
+            <button onclick="insertToDisplay('1')">1</button>
+            <button onclick="insertToDisplay('2')">2</button>
+            <button onclick="insertToDisplay('3')">3</button>
+            <button onclick="insertToDisplay('0')" class="btn-zero">0</button>
+            <button onclick="adicionarDecimal()">.</button>
+            <button onclick="calculateResult()" class="btn-result">=</button>
+        </div>
+    </div>
+    <script src="Script.js"></script>
+    <footer>
+    <p>© <span id="ano"></span> Todos os direitos reservados.</p>
+    </footer>
+    <script>
+    document.getElementById("ano").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
